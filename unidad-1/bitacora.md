@@ -13,9 +13,14 @@ Crear productos “vivos”
 
 "Es las creativa la tecnologia que el ser humano?"
 
+Piensa y describe en una sola frase y en tus propias palabras cómo la aleatoriedad influye en el arte generativo.
+La aletoriedad es la puerta a la infinidad de resultados esperados y no esperados 
+La aletoriedad como la variable de variables
+
 
 ## Bitácora de aplicación 
 
 
 
 ## Bitácora de reflexión
+
