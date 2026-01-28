@@ -235,8 +235,94 @@ Copia el código en tu bitácora.
 Coloca en enlace a tu sketch en p5.js en tu bitácora.
 Selecciona una captura de pantalla de tu sketch y colócala en tu bitácora.
 ```
+Elegir 3 conceptos 
+
+Camino del artista, va descubriendo en el camino
+El diseñador primero planea
+
+💡 Crear una experiencia en la que segun la posicion del mouse en el eje X se reciba un determinado comportamiento de un **RandomWalker**, si el mouse se encuentra hacia la izquierda obtendremos una caminata tranquila y con menos **saltos de Levy** y su recorrido obtendra un color azul (frio), si el mouse se encuentra mas hacia la derecha el movimiento sera mas erratico, habran mas saltos y el color torna rojo (calido). Para ello  
+
+```
+let walker;
+
+function setup() {
+  createCanvas(640, 240);
+  background(200);
+  walker = new Walker();
+}
+
+function draw() {
+  walker.step();
+  walker.show();
+}
+
+class Walker {
+  constructor() {
+    this.x = width / 2;
+    this.y = height / 2;
+  }
+
+  step() {
+    // Normalizamos la posición del mouse (0 izquierda, 1 derecha). Constrain nos permite limitar los valores que queremos que el elemento mouseX/anchoCanvas
+que es la posicion del mouse se mantenga entre 0 (el inicio del camvas y 1, que es el final).
+Recordar que estos elementos nos extienden valores PORCENTUALES
+    let m = constrain(mouseX / width, 0, 1);
+
+    // Velocidad y erraticidad
+    let steps = int(lerp(1, 5, m)); // más pasos si el mouse va a la derecha, con lerp, establecemos un rango en el que, en este caso m, elije segun cierto dato
+-En el caso concreto- Aqui indicamos el rango entre 1 y 5, y m lo indicamos anteriormente que sera un porcentage determinado entre la posicion del mouse/anchoCanvas.
+Usamos int para que convierta el resultado dado en un entero
+    let levyChance = lerp(0.05, 0.15, m); // más saltos de Lévy a la derecha. Aqui lerp funciona de la misma manera, estableceun rango,
+en este caso 5% y 15% y segun el dato de m este tiende mas hacia un extremo del rango o el otro
+
+    for (let i = 0; i < steps; i++) {
+      let stepSize = 1;
+
+      // Saltos de Lévy
+      if (random(1) < levyChance) {
+        stepSize = pow(random(1), -2) * 2;
+        stepSize = constrain(stepSize, 1, 40);
+      }
+
+      let angle = random(TWO_PI);
+      this.x += cos(angle) * stepSize;
+      this.y += sin(angle) * stepSize;
+    }
+  //Aqui limitaremos que el resultado del salto y movimientos se queden dentro del Canvas parametrizando el rango en el que pueden darse los resultados nuevamente con CONSTRAIN, en este caso lo parametrizamos entre 0 y la medida del ancho o alto segun corresponda restado  - 1 para evitar algunos errores.
+    this.x = constrain(this.x, 0, width - 320);
+    this.y = constrain(this.y, 0, height - 120);
+  }
+
+  show() {
+    let m = constrain(mouseX / width, 0, 1);
+
+    // Interpolación de color
+    let cold = color(50, 100, 255, 900);   // azul
+    let warm = color(255, 60, 60, 900);   // rojo
+    let c = lerpColor(cold, warm, m);
+
+    stroke(c);
+    circle(this.x, this.y, 2);
+  }
+}
+
+```
+Mouse en posicion hacia la izquierda con caminata mas tranquila
+<img width="634" height="235" alt="Captura de pantalla 2026-01-28 110147" src="https://github.com/user-attachments/assets/bccbbebd-0fa6-4bea-ac3e-a26c33726335" />
+
+Mouse en posicion hacia la derecha con caminata mas erratica
+<img width="631" height="230" alt="Captura de pantalla 2026-01-28 110209" src="https://github.com/user-attachments/assets/d57b84a8-98a4-450d-89fe-bba6f264befb" />
+
+Mouse centrado con caminata intermedia  
+<img width="638" height="229" alt="Captura de pantalla 2026-01-28 110226" src="https://github.com/user-attachments/assets/604af6ba-d423-40f8-945e-ad5f4b1eb239" />
 
 
+**link del proyecto**
+https://editor.p5js.org/jferosorio/sketches/7nCEU2RVMs
+
+
+Para repasar sobre constrain; https://p5js.org/es/reference/p5/constrain/
+Para repasar sobre lerp; https://p5js.org/reference/p5/lerp/
 
 ## Bitácora de reflexión
 
@@ -264,6 +350,7 @@ Una caminata en simulación es un proceso en el que un agente se mueve paso a pa
 ---
 🧠 *Bitácora desarrollada por Juan Fernando*  
 🎮 *Ingeniería de Diseño de Entretenimiento Digital*
+
 
 
 
