@@ -119,18 +119,75 @@ step() {
 
 
 ## 😎Actividad 4
+```
+Una vez has entendido el concepto de distribución normal, vas a pensar en una nueva manera de visualizarlo.
 
-## 😎Actividad 5
-SALTOS DE LEVY
+Crea un nuevo sketch en p5.js que represente una distribución normal.
+Copia el código en tu bitácora.
+Coloca en enlace a tu sketch en p5.js en tu bitácora.
+Selecciona una captura de pantalla de tu sketch y colócala en tu bitácora.
+```
+
+*La distribucion normal hace referencia al rango en el que pueden ser sucedidas las posibilidades.
+
+
+## 😎Actividad 5 - SALTOS DE LEVY
+```
+Crea un nuevo sketch en p5.js donde modifiques uno de los ejemplos anteriores y adiciones de Lévy flight.
+Explica por qué usaste esta técnica y qué resultados esperabas obtener.
+Copia el código en tu bitácora.
+Coloca en enlace a tu sketch en p5.js en tu bitácora.
+Selecciona una captura de pantalla de tu sketch y colócala en tu bitácora.
+```
+
+
+## 😎Actividad 6 - Ruido perlin
+```
+Crea un nuevo sketch en p5.js donde los visualices.
+Explica el concepto qué resultados esberabas obtener.
+Copia el código en tu bitácora.
+Coloca en enlace a tu sketch en p5.js en tu bitácora.
+Selecciona una captura de pantalla de tu sketch y colócala en tu bitácora.
+```
 
 ## Bitácora de aplicación 
+
+
+## 😎Actividad 7 - Ruido perlin
+```
+Un texto donde expliques el concepto de obra generativa.
+Copia el código en tu bitácora.
+Coloca en enlace a tu sketch en p5.js en tu bitácora.
+Selecciona una captura de pantalla de tu sketch y colócala en tu bitácora.
+```
 
 
 
 ## Bitácora de reflexión
 
 
+```
+Describe la diferencia fundamental entre la aleatoriedad generada por random() y la apariencia de aleatoriedad del Ruido Perlin (noise()). ¿En qué tipo de situación usarías cada una?
+Explica con tus palabras qué es una distribución de probabilidad. ¿Qué diferencia visual produce una caminata aleatoria con una distribución uniforme versus una con una distribución normal?
+¿Cuál es el papel de la aleatoriedad en el arte generativo? Menciona al menos dos funciones distintas que cumple
+Piensa en tu obra final (Actividad 07). Describe uno de los conceptos de aleatoriedad que usaste y explica por qué fue una elección adecuada para lograr el efecto que buscabas.
+¿Qué es un “paseo” o “caminata” (walk) en el contexto de la simulación? ¿Qué característica particular tiene una caminata de tipo “Lévy flight”?
+```
+🤔
+### Diferencia Random y Noise
+Con random(), cada valor es impredecible y no tiene relación con el anterior. Esto produce resultados abruptos saltos bruscos.
+ El Ruido Perlin da la apariencia de aleatoriedad, pero en realidad es una función continua: valores cercanos producen resultados similares. se genera transiciones suaves y orgánicas.*
+
+### Distribucion de propabilidad
+Una distribución de probabilidad describe qué tan probable es que ocurran ciertos valores dentro de un conjunto de posibilidades, 
+
+### EL papel de la aletoriedad en el arte generativo
+Observamos que  aleatoriedad cumple roles clave, como introducir variación y evitar la repetición y tambien permite que cada ejecución de la obra sea distinta, aunque siga las mismas reglas. Tal como lo mencionamos incialmente un producto vivo, "humanizamos la maquina" por lo que se puede decir que se busca simular comportamientos naturales
+
+### Que es un paseo o caminata
+Una caminata en simulación es un proceso en el que un agente se mueve paso a paso, donde cada nueva posición depende de la anterior, generalmente con algún componente aleatorio. Una Lévy flight es un tipo especial de caminata que se caracteriza por pasos pequeños y de vez en cuando saltos muy largos.
 ---
 🧠 *Bitácora desarrollada por Juan Fernando*  
 🎮 *Ingeniería de Diseño de Entretenimiento Digital*
+
 
