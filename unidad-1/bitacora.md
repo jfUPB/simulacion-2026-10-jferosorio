@@ -2,6 +2,8 @@
 
 # Unidad 1
 
+Link al curso se simulaccion https://juanferfranco.github.io/simulacion-2026-10/units/intro/
+
 ## Bitácora de proceso de aprendizaje
 
 *El artista imagina la herramienta que soluciona el problema, imagina la herramienta que crea. Es como una relacion padre e hijo, el padre ofrece conocimientos, guias y valores, el hijo acoge esas herramientas pero no se puede determinar precisamente su comportamiento.*
@@ -12,7 +14,9 @@ Crear productos “vivos”
 
 "Es las creativa la tecnologia que el ser humano?"
 
-## 😎Actividad 01
+<br><br>
+
+### 😎Actividad 01
 ```
 Piensa y describe en una sola frase y en tus propias palabras cómo la aleatoriedad influye en el arte generativo.
 ```
@@ -23,14 +27,13 @@ La aleatoriedad como la bandera de la creación.
 Humanizar el resultado de la máquina.
 La aleatoriedad como las diferentes formas de interpretación
 
-
 Tomando el codigo de https://editor.p5js.org/jferosorio/sketches/_M9jYgboV
-
-
 
 La distribucion de probabilidad de uniforme, todos los numeros de la secuencia tienen la misma probabilidad de salir.
 
-## 😎 Actividad 02 - Caminatas aleatorias
+<br><br>
+
+### 😎 Actividad 02 - Caminatas aleatorias
 ```
 Realiza el siguiente experimento y reporta los resultados en tu bitácora:
 
@@ -89,7 +92,9 @@ Si ponemos un mismo dato en los else, solo tendra encuenta el primero ✅
 Background es el color del lienzo 
 El Walker nace en el centro del lienzo 
 
-## 😎Actividad 3
+<br><br>
+
+### 😎Actividad 3
 ```
 En tus propias palabras cuál es la diferencia entre una distribución uniforme y una no uniforme de números aleatorios.
 Modifica el código de la caminata aleatoria para que utilice una distribución no uniforme, favoreciendo el movimiento hacia la derecha.
@@ -157,8 +162,9 @@ step() {
     }
 ```
 
+<br><br>
 
-## 😎Actividad 4
+### 😎Actividad 4
 ```
 Una vez has entendido el concepto de distribución normal, vas a pensar en una nueva manera de visualizarlo.
 
@@ -185,8 +191,10 @@ function draw() {
 
 *La distribucion normal hace referencia al rango en el que pueden ser sucedidas las posibilidades*
 
+<br><br>
 
-## 😎Actividad 5 - SALTOS DE LEVY
+
+### 😎Actividad 5 - SALTOS DE LEVY
 ```
 Crea un nuevo sketch en p5.js donde modifiques uno de los ejemplos anteriores y adiciones de Lévy flight.
 Explica por qué usaste esta técnica y qué resultados esperabas obtener.
@@ -211,8 +219,10 @@ A 1% chance of taking a large step
 r < 0.01 indica que solo hay un 1% de probabilidad de realizar el salto. Si esta probabilidad se da, dara un salto aleatorio ubicado entre -100 puntos y 100 puntos en X, y  ubicado entre -100 puntos y 100 puntos en Y. De no cumplir esa condicion es decir que se escoja ese 1%, el movimiento sera aleatorio en un rango de 1 tanto en X y Y
 
 
+<br><br>
 
-## 😎Actividad 6 - Ruido perlin
+
+### 😎Actividad 6 - Ruido perlin
 ```
 Crea un nuevo sketch en p5.js donde los visualices.
 Explica el concepto qué resultados esberabas obtener.
@@ -227,8 +237,10 @@ Al lado izquierdo aplicacion de ruido perlin, lo que acota el espectro de opcion
 
 ## Bitácora de aplicación 
 
+<br><br>
 
-## 😎Actividad 7 
+
+### 😎Actividad 7 
 ```
 Un texto donde expliques el concepto de obra generativa.
 Copia el código en tu bitácora.
@@ -350,6 +362,7 @@ Una caminata en simulación es un proceso en el que un agente se mueve paso a pa
 ---
 🧠 *Bitácora desarrollada por Juan Fernando*  
 🎮 *Ingeniería de Diseño de Entretenimiento Digital*
+
 
 
 
