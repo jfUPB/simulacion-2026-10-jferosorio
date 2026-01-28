@@ -87,7 +87,7 @@ class Walker {
 Cambiar createCanvas(640, 240) edita el tamano del lienzo ✅
 Si ponemos un mismo dato en los else, solo tendra encuenta el primero ✅
 Background es el color del lienzo 
-El Walker nace en el centro del lienzo por 
+El Walker nace en el centro del lienzo 
 
 ## 😎Actividad 3
 ```
@@ -103,6 +103,46 @@ Podemos modificar nuestra distribucion de probabilidad
 Si queremos que nos salga un resultado esperado si alterar la forma de seleccino podemos modificar lo que sera seleccionado, ejemplo los gatos de colores
 
 Asi se logra modificar el código de la caminata aleatoria para que utilice una distribución no uniforme, favoreciendo el movimiento hacia la derecha. Editando el numero de posibilidades y limitando a que la eleccion que se escoja tienda al resultado que queremos
+
+
+**Condigo que muestra 3 tipos de distribuciones de probabilidad**
+<img width="919" height="295" alt="image" src="https://github.com/user-attachments/assets/dca39eff-abce-441f-a29c-e9facc43a271" />
+
+```
+function setup() {
+  createCanvas(640, 240);
+  background(200);
+}
+
+function draw() {
+  //{!1} A normal distribution with mean 320 and standard deviation 60
+  let x = randomGaussian(320, 120); //Aqui se define la media y la desviacion de estandar
+  // no hay let y pr lo que se pondra en la mitad.
+  let sqrColor= randomGaussian(2, 20)
+  noStroke();
+  fill(sqrColor, 2);
+  square(x, 120, 16);
+{
+let x = randomGaussian(320, 120);
+  let y =70
+
+  noStroke();
+  fill(0, 10);
+  square(x, y, 16);
+  {
+  let x = randomGaussian(320, 10);
+  let y =90
+
+  noStroke();
+  fill(0, 10);
+  square(x, y, 16);
+
+}
+
+}}
+```
+
+
 ```
 step() {
     const choice = floor(random(4));
@@ -170,6 +210,8 @@ A 1% chance of taking a large step
 ```
 r < 0.01 indica que solo hay un 1% de probabilidad de realizar el salto. Si esta probabilidad se da, dara un salto aleatorio ubicado entre -100 puntos y 100 puntos en X, y  ubicado entre -100 puntos y 100 puntos en Y. De no cumplir esa condicion es decir que se escoja ese 1%, el movimiento sera aleatorio en un rango de 1 tanto en X y Y
 
+
+
 ## 😎Actividad 6 - Ruido perlin
 ```
 Crea un nuevo sketch en p5.js donde los visualices.
@@ -179,10 +221,14 @@ Coloca en enlace a tu sketch en p5.js en tu bitácora.
 Selecciona una captura de pantalla de tu sketch y colócala en tu bitácora.
 ```
 
+<img width="1189" height="378" alt="image" src="https://github.com/user-attachments/assets/7fa8f3f1-3a62-4aa8-94a9-904b5f1b0ffe" />
+
+Al lado izquierdo aplicacion de ruido perlin, lo que acota el espectro de opciones, es decir que controlamos su desviacion estandar. A la derecha un grafico con ruido normal, se ven como los resultados son mas volatiles, esto pues su desviacion estandar no esta controlada.
+
 ## Bitácora de aplicación 
 
 
-## 😎Actividad 7 - Ruido perlin
+## 😎Actividad 7 
 ```
 Un texto donde expliques el concepto de obra generativa.
 Copia el código en tu bitácora.
@@ -218,6 +264,7 @@ Una caminata en simulación es un proceso en el que un agente se mueve paso a pa
 ---
 🧠 *Bitácora desarrollada por Juan Fernando*  
 🎮 *Ingeniería de Diseño de Entretenimiento Digital*
+
 
 
 
