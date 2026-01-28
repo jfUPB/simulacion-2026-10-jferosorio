@@ -127,8 +127,23 @@ Copia el código en tu bitácora.
 Coloca en enlace a tu sketch en p5.js en tu bitácora.
 Selecciona una captura de pantalla de tu sketch y colócala en tu bitácora.
 ```
+```
+function setup() {
+  createCanvas(640, 240);
+  background(255);
+}
 
-*La distribucion normal hace referencia al rango en el que pueden ser sucedidas las posibilidades.
+function draw() {
+  //{!1} A normal distribution with mean 320 and standard deviation 60
+  let x = randomGaussian(320, 90);
+  noStroke();
+  fill(0, 10);
+  circle(x, 120, 16);
+}
+```
+<img width="597" height="237" alt="image" src="https://github.com/user-attachments/assets/6fc3d9ce-418e-4c71-b84d-c73226e3774d" />
+
+*La distribucion normal hace referencia al rango en el que pueden ser sucedidas las posibilidades*
 
 
 ## 😎Actividad 5 - SALTOS DE LEVY
@@ -139,7 +154,21 @@ Copia el código en tu bitácora.
 Coloca en enlace a tu sketch en p5.js en tu bitácora.
 Selecciona una captura de pantalla de tu sketch y colócala en tu bitácora.
 ```
+variación de la caminata aleatoria
+*cuanto más largo es el paso, menos probable es que sea elegido; cuanto más corto es el paso, más probable resulta.*
+```
+let r = random(1);
+if (r < 0.01) {
+  xstep = random(-100, 100);
+  ystep = random(-100, 100);
+A 1% chance of taking a large step
 
+} else {
+  xstep = random(-1, 1);
+  ystep = random(-1, 1);
+}
+```
+r < 0.01 indica que solo hay un 1% de probabilidad de realizar el salto. Si esta probabilidad se da, dara un salto aleatorio ubicado entre -100 puntos y 100 puntos en X, y  ubicado entre -100 puntos y 100 puntos en Y. De no cumplir esa condicion es decir que se escoja ese 1%, el movimiento sera aleatorio en un rango de 1 tanto en X y Y
 
 ## 😎Actividad 6 - Ruido perlin
 ```
@@ -189,5 +218,6 @@ Una caminata en simulación es un proceso en el que un agente se mueve paso a pa
 ---
 🧠 *Bitácora desarrollada por Juan Fernando*  
 🎮 *Ingeniería de Diseño de Entretenimiento Digital*
+
 
 
