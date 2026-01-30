@@ -332,6 +332,7 @@ Mouse centrado con caminata intermedia
 **link del proyecto**
 https://editor.p5js.org/jferosorio/sketches/7nCEU2RVMs
 
+Conceptos aplicados, caminitas aletorias, saltos de levy, ruido de perlin, distribucion normal, 
 
 Para repasar sobre constrain; https://p5js.org/es/reference/p5/constrain/
 Para repasar sobre lerp; https://p5js.org/reference/p5/lerp/
@@ -362,6 +363,7 @@ Una caminata en simulación es un proceso en el que un agente se mueve paso a pa
 ---
 🧠 *Bitácora desarrollada por Juan Fernando*  
 🎮 *Ingeniería de Diseño de Entretenimiento Digital*
+
 
 
 
