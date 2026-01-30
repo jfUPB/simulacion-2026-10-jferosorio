@@ -235,10 +235,10 @@ Selecciona una captura de pantalla de tu sketch y colócala en tu bitácora.
 
 Al lado izquierdo aplicacion de ruido perlin, lo que acota el espectro de opciones, es decir que controlamos su desviacion estandar. A la derecha un grafico con ruido normal, se ven como los resultados son mas volatiles, esto pues su desviacion estandar no esta controlada.
 
-## Bitácora de aplicación 
-
 <br><br>
 
+
+## Bitácora de aplicación 
 
 ### 😎Actividad 7 
 ```
@@ -252,7 +252,7 @@ Elegir 3 conceptos
 Camino del artista, va descubriendo en el camino
 El diseñador primero planea
 
-💡 Crear una experiencia en la que segun la posicion del mouse en el eje X se reciba un determinado comportamiento de un **RandomWalker**, si el mouse se encuentra hacia la izquierda obtendremos una caminata tranquila y con menos **saltos de Levy** y su recorrido obtendra un color azul (frio), si el mouse se encuentra mas hacia la derecha el movimiento sera mas erratico, habran mas saltos y el color torna rojo (calido). Para ello  
+💡 Se buscará crear una experiencia en la que segun la posicion del mouse en el eje X se reciba un determinado comportamiento de un **RandomWalker**, si el mouse se encuentra hacia la izquierda obtendremos una caminata tranquila y con menos **saltos de Levy** (es decir que reduciremos su **distribucion normal, es decir aplicaremos un randomGauss**) y su recorrido obtendra un color azul (frio), si el mouse se encuentra mas hacia la derecha el movimiento sera mas erratico (**aplicaremos una distribucion normal unifrome**), habran mas saltos y el color torna rojo (calido). Para ello:
 
 ```
 let walker;
@@ -328,14 +328,19 @@ Mouse en posicion hacia la derecha con caminata mas erratica
 Mouse centrado con caminata intermedia  
 <img width="638" height="229" alt="Captura de pantalla 2026-01-28 110226" src="https://github.com/user-attachments/assets/604af6ba-d423-40f8-945e-ad5f4b1eb239" />
 
-
+---
 **link del proyecto**
 https://editor.p5js.org/jferosorio/sketches/7nCEU2RVMs
-
+---
 Conceptos aplicados, caminitas aletorias, saltos de levy, ruido de perlin, distribucion normal, 
 
 Para repasar sobre constrain; https://p5js.org/es/reference/p5/constrain/
 Para repasar sobre lerp; https://p5js.org/reference/p5/lerp/
+
+
+<br><br>
+
+
 
 ## Bitácora de reflexión
 
@@ -371,6 +376,7 @@ Una caminata en simulación es un proceso en el que un agente se mueve paso a pa
 ---
 🧠 *Bitácora desarrollada por Juan Fernando*  
 🎮 *Ingeniería de Diseño de Entretenimiento Digital*
+
 
 
 
