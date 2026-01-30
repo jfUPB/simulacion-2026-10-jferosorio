@@ -348,21 +348,30 @@ Piensa en tu obra final (Actividad 07). Describe uno de los conceptos de aleator
 ¿Qué es un “paseo” o “caminata” (walk) en el contexto de la simulación? ¿Qué característica particular tiene una caminata de tipo “Lévy flight”?
 ```
 🤔
-### Diferencia Random y Noise
+### 1. Diferencia Random y Noise
 Con random(), cada valor es impredecible y no tiene relación con el anterior. Esto produce resultados abruptos saltos bruscos.
  El Ruido Perlin da la apariencia de aleatoriedad, pero en realidad es una función continua: valores cercanos producen resultados similares. se genera transiciones suaves y orgánicas.*
 
-### Distribucion de propabilidad
-Una distribución de probabilidad describe qué tan probable es que ocurran ciertos valores dentro de un conjunto de posibilidades, 
+### 2. Distribucion de propabilidad, ¿Qué diferencia visual produce una caminata aleatoria con una distribución uniforme versus una con una distribución normal?
+Una distribución de probabilidad describe qué tan probable es que ocurran ciertos valores dentro de un conjunto de posibilidades, la caminata aletoria con distribucion normal sera mas erratica, mas inesperdad pues se tiene una gamma mas aplica de posibilidades y que tienen la misma propabilidad de ser elegidos, entonces si tenemos Walker que se mueva solo en el eje X y Y, tendremos que moverse a la izquierda, a la derecho ariba o abajo, tendran la misma posibilidad de suceder. Por otro lado la distribucion uniforme o gausseana indica que la aletoriedad tendra preferencia por ciertos datos determinados en un rango y por su normal, por ende seran elegidos de manera mas reiterativa datos cercanos, vistualmente se vera un movimiento mas suave, variable pero no brusco. Estos concepto sya los abordamos anteriormente en la bitacora cuando trajimos la siguiente captura;
 
-### EL papel de la aletoriedad en el arte generativo
-Observamos que  aleatoriedad cumple roles clave, como introducir variación y evitar la repetición y tambien permite que cada ejecución de la obra sea distinta, aunque siga las mismas reglas. Tal como lo mencionamos incialmente un producto vivo, "humanizamos la maquina" por lo que se puede decir que se busca simular comportamientos naturales
+<img width="1007" height="377" alt="image" src="https://github.com/user-attachments/assets/95072d45-d81b-44d1-86f2-2993f3baf769" />
 
-### Que es un paseo o caminata
+
+### 3. EL papel de la aletoriedad en el arte generativo
+Observamos que  aleatoriedad cumple roles clave, como introducir variación y evitar la repetición y tambien permite que cada ejecución de la obra sea distinta, aunque siga las mismas reglas. Por otro lado tal como lo mencionamos incialmente buscamos crear un producto vivo, "humanizamos la maquina" por lo que se puede decir que esta aletoriedad se busca simular comportamientos naturales.
+
+### 4. Describe uno de los conceptos de aleatoriedad que usaste y explica por qué fue una elección adecuada para lograr el efecto que buscabas.
+Usamos random para establecer el elemento de la aletoriedad en nuestra caminata, esta aletoriedad la aplicamos de manera interactiva y variable segun la posicion de mouse en X, por lo que podemos decir que establecimos en el movimiento del mouse la capacidad de alterar la distribucion normal de las variables de nuestro proyecto, como la propabilidad de un salto de levy, y el color (solo entre azul y rojo).
+
+
+### Que es un paseo o caminata, ¿Qué característica particular tiene una caminata de tipo “Lévy flight”?
 Una caminata en simulación es un proceso en el que un agente se mueve paso a paso, donde cada nueva posición depende de la anterior, generalmente con algún componente aleatorio. Una Lévy flight es un tipo especial de caminata que se caracteriza por pasos pequeños y de vez en cuando saltos muy largos.
+
 ---
 🧠 *Bitácora desarrollada por Juan Fernando*  
 🎮 *Ingeniería de Diseño de Entretenimiento Digital*
+
 
 
 
