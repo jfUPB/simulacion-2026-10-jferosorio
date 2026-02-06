@@ -1,6 +1,7 @@
 # Unidad 2
 
 VECTORES https://natureofcode.com/vectors/
+https://juanferfranco.github.io/simulacion-2026-10/units/unit2/
 
 ## Bitácora de proceso de aprendizaje
 
@@ -145,3 +146,4 @@ Partiendo de; https://editor.p5js.org/natureofcode/sketches/gYJHm1EFL
 
 
 ## Bitácora de reflexión
+
