@@ -164,6 +164,8 @@ Tener en cuenta; Hay que limitar la velocidad si no todo se va a la vrga,
 Se busca generar una obra que simule el viaje a travez del espacio, mas especificamente la entrada a "hyper espacio", estos fragmentos donde un elemento viaja a valocidades mayores a la de la luz, tomando como referencias obras del Scifi como Star Wars, Halo o Star Trek. 
 El color y el grosor del rastro se parametrizan a partir de variables dinámicas como la velocidad y el tiempo, reforzando visualmente la sensación de energía y ruptura del espacio-tiempo.
 
+Link al proyecto: https://editor.p5js.org/jferosorio/sketches/m1txzvDLI
+
 ```
 let stars = [];
 let totalStars = 1000;
@@ -248,13 +250,14 @@ reset() {
 }
 ```
 
-Link al proyecto: https://editor.p5js.org/jferosorio/sketches/m1txzvDLI
+
 
 <img width="774" height="574" alt="image" src="https://github.com/user-attachments/assets/69d98348-5e0b-4b2d-887d-884635e81397" />
 <img width="778" height="579" alt="image" src="https://github.com/user-attachments/assets/e34bc76e-e53f-4976-ab35-25783b20bc38" />
 
 
 ## Bitácora de reflexión
+
 
 
 
