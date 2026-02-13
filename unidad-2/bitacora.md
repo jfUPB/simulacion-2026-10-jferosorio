@@ -161,8 +161,12 @@ Tener en cuenta; Hay que limitar la velocidad si no todo se va a la vrga,
 ## Bitácora de aplicación 
 
 
-Se busca generar una obra que simule el viaje a travez del espacio, mas especificamente la entrada a "hyper espacio", estos fragmentos donde un elemento viaja a valocidades mayores a la de la luz, tomando como referencias obras del Scifi como Star Wars, Halo o Star Trek. 
-El color y el grosor del rastro se parametrizan a partir de variables dinámicas como la velocidad y el tiempo, reforzando visualmente la sensación de energía y ruptura del espacio-tiempo.
+Se busca generar una obra que simule el viaje a travez del espacio, mas especificamente la entrada a "hyper espacio", estos fragmentos donde un elemento viaja a valocidades mayores a la de la luz, tomando como referencias obras del Scifi como Star Wars, Halo o Star Trek. Se extenderan un primer grupo de estrellas simulando la entrada al HyperSpace y poteriormente habran una serie de lineas que simularan el paso de estrellas a una gran velocidad.
+El color y el grosor del rastro se parametrizan a partir de variables dinámicas como la velocidad y el tiempo, reforzando visualmente la sensación de energía y ruptura del espacio-tiempo. Habran entonces puntos (lineas) pequenas que simularan las estrellas, estas seran en mayor numero, y otros objetos mas grandes en otros colores como lo puede ser el amarillo, apareceran en menos medida simulando estrellas d emayor tamano o planetas.
+
+Se busca aplicar el principio del Motion 101, objetos que cambian su posición, velocidad y aceleración a lo largo del tiempo, aqui lo aplicamos iniciando con una entrada relativamente lenta y luego puntos empujados que cambian su direccion y aceleracion. n este proyecto se aplica Motion 101 porque el movimiento de cada estrella se construye a partir de la relación fundamental entre posición y velocidad, y su evolución en el tiempo, en lugar de mover los objetos de forma directa o “teletransportada”
+
+Cada estrella tiene una posición (this.position) representada como un vector y una velocidad definida por una dirección (this.velocity, obtenida a partir de un ángulo aleatorio) y una magnitud (this.speed).
 
 Link al proyecto: https://editor.p5js.org/jferosorio/sketches/m1txzvDLI
 
@@ -255,8 +259,13 @@ reset() {
 <img width="774" height="574" alt="image" src="https://github.com/user-attachments/assets/69d98348-5e0b-4b2d-887d-884635e81397" />
 <img width="778" height="579" alt="image" src="https://github.com/user-attachments/assets/e34bc76e-e53f-4976-ab35-25783b20bc38" />
 
+<img width="780" height="573" alt="image" src="https://github.com/user-attachments/assets/783e087b-7ac4-4f20-97ed-cc3900517e1d" />
+<img width="779" height="577" alt="image" src="https://github.com/user-attachments/assets/ffd9f4fb-11ed-462b-870c-f2ce71c7a782" />
+
+
 
 ## Bitácora de reflexión
+
 
 
 
