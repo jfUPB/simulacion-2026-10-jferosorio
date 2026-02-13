@@ -277,6 +277,7 @@ Link al proyecto https://editor.p5js.org/jferosorio/sketches/HIwUkCOqw
 Revisando las obras e ideas de Jared y Jeffrey, observamos que tras de las iniciativas generativas, se procura simular o buscar replicar el comportamiento natural. 
 
 Para nuestro proyecto simularemos el elemento mas basico de las obras de los autores mencionados, en este caso la atraccion. Una fuerza que busca juntar elementos bajo determinado parametro, puede ser la busqueda de un elemento en busca de otro, la reunion de varios elementos con condiciones similares, etc. En este caso generamos 5 tipos de particulas, diferenciadas unicamente por su color, el numero de estas particulas puede ser variable. La idea es que particulas del mismo color se vean atraidas entre si, replicando lo que puede ser la seleccion natural, o **Hemofilia**. Fenomenos visibles en areas del conocimiento como la biologia, la ecologia, o incluso en la actualidad humana en las redes sociales.
+Adicionalmente añadimos la posibilidad que con el mouse puedas seleccionar un area el cual puede simbolizar fenomenos naturales que influyen en la cercania de los elementos, como un evento social, una catastrofe natural, o incluso coincidir en una materia en la universidad.
 
 **Link del proyecto** https://editor.p5js.org/jferosorio/sketches/roJ5PVXnS
 
@@ -287,6 +288,7 @@ Para nuestro proyecto simularemos el elemento mas basico de las obras de los aut
 <img width="775" height="572" alt="image" src="https://github.com/user-attachments/assets/704e63b3-c4d8-4676-9b2d-acd2978e2b02" />
 
 <img width="778" height="572" alt="image" src="https://github.com/user-attachments/assets/fa63d22c-3852-4387-ad5b-977f6ee75a2e" />
+
 
 
 
