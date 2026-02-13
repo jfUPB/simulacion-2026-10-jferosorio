@@ -264,7 +264,15 @@ reset() {
 
 
 
+Se crea una variacion del proyecto, la cual consta de ubicar el punto del reinicio de las estrellas en la posicion del mouse, y rebajando el numero de estrellas
+
+Link al proyecto https://editor.p5js.org/jferosorio/sketches/HIwUkCOqw
+
+<img width="776" height="575" alt="image" src="https://github.com/user-attachments/assets/8902df1b-a7d6-46fd-9d2c-223b087a3c20" />
+
+
 ## Bitácora de reflexión
+
 
 
 
