@@ -1,5 +1,8 @@
 # Unidad 3
 
+
+## Bitácora de proceso de aprendizaje
+
 https://juanferfranco.github.io/simulacion-2026-10/units/unit3/
 
 
@@ -36,11 +39,14 @@ Ventajas de locarl; 1. Trabajar en mejor editos y con iA.caht
 1. Inventar la fuerza, puede ser un perlin, un random, la conectamos a la narrativa.
 2. Modelar una fuerza existente, una de la vida real, puede ser friccion resistencia o gravedad
 
-## Bitácora de proceso de aprendizaje
+
+
 
 
 ## Bitácora de aplicación 
 
+Nota: no hay trabajo reportado en la bitácora de aplicaciòn
 
 
 ## Bitácora de reflexión
+
