@@ -2,7 +2,7 @@
 
 ## Bitácora de proceso de aprendizaje
 
-### 👌**Actividad 1**
+## 👌**Actividad 1**
 
 <img width="1064" height="455" alt="image" src="https://github.com/user-attachments/assets/fc977d65-075d-4664-85d0-efee58f39029" />
 
@@ -12,7 +12,7 @@ Las obras de arte generativo de Memo Akten se caracterizan por mezclar arte, tec
 Además, muchas de sus piezas buscan que el espectador participe o reflexione sobre la relación entre los humanos y la tecnología. A través de instalaciones interactivas, visuales generativos y presentaciones audiovisuales en tiempo real, su trabajo explora cómo las máquinas pueden “percibir” el mundo y cómo esa percepción se diferencia de la humana. Más que solo crear imágenes llamativas, sus obras suelen plantear preguntas sobre la inteligencia artificial, la conciencia y la forma en que la tecnología está cambiando nuestra manera de entender la realidad.
 
 
-### 👌**Actividad 2**
+## 👌**Actividad 2**
 
 <img width="603" height="230" alt="image" src="https://github.com/user-attachments/assets/3c44d314-143f-4e8a-ac62-31aad32b6e7a" />
 
@@ -81,14 +81,27 @@ heading() extrae la dirección. Ese vector tiene un ángulo y finalmente el obje
 
 
 
-### 👌**Actividad 3**
-### 👌**Actividad 4**
-### 👌**Actividad 5**
-### 👌**Actividad 6**
-### 👌**Actividad 7**
-### 👌**Actividad 8**
+## 👌**Actividad 3**
+## 👌**Actividad 4**
+## 👌**Actividad 5 oordenadas polares**
 
 
+
+
+## 👌**Actividad 6; Funciones sinusoides**
+## 👌**Actividad 7 ; Repaso conceptos**
+## 👌**Actividad 8; Ondas**
+
+## 👌**Actividad 8; Resortes**
+
+## 👌**Actividad 8; Pendulos**
+
+
+
+
+
+
+## Bitácora de aplicación 
 
 https://editor.p5js.org/jferosorio/sketches/cBQxiNxnE
 <img width="586" height="385" alt="image" src="https://github.com/user-attachments/assets/1dbf3452-b58c-4f25-baa1-6564676186ed" />
@@ -97,9 +110,6 @@ https://editor.p5js.org/jferosorio/sketches/fhoVUg1Hn
 <img width="593" height="386" alt="image" src="https://github.com/user-attachments/assets/38947981-f82d-4bb6-a6a3-f4e84abb79a4" />
 
 
-## Bitácora de aplicación 
-
-
-
 ## Bitácora de reflexión
+
 
