@@ -228,6 +228,61 @@ Link al proyecto dond ela curva de ciruclos se mueve en forma de ola; https://ed
 
 ## Bitácora de aplicación 
 
+Buscanso plasmar un comportamiendo basado en las las auroras plasmamos graficamente una funcion  sinusoidal que varia a en base a la interaccion del usuario, compuesta por múltiples partículas de color estas presentaran formas de comportamientos distintas segun la posicion del mouse, su movimiento también es afectado por pequeñas variaciones orgánicas producidas por ruido erlin, lo que se busca con esto es que  se introduce irregularidades suaves que hacen que la onda se comporte de manera más natural
+La aritcipacon del usuario se plasma con la posición del cursor ya que este actúa como una fuente de energía que altera la amplitud y la intensidad del movimiento
+
+LINK AL PROYECTO; https://editor.p5js.org/jferosorio/sketches/yrEHwGT8y
+
+```
+let angle = 0;
+let baseAmplitude = 80;
+let noiseOffset = 0;
+
+function setup() {
+  createCanvas(800,500);
+  colorMode(HSB);
+}
+
+function draw() {
+
+  background(10,10,20);
+
+  // amplitud controlada por el mouse
+  let amplitude = map(mouseY,0,height,20,150);
+
+  let angleVelocity = map(mouseX,0,width,0.02,0.25);
+
+  for(let x=0; x<=width; x+=12){
+
+    // variación orgánica con ruido
+    let noiseValue = map(noise(noiseOffset + x*0.01),0,1,-40,40);
+
+    let y = amplitude * sin(angle + x*0.05) + noiseValue;
+
+    // color dinámico
+    let hue = map(x,0,width,160,300);
+
+    stroke(hue,80,100);
+    strokeWeight(4);
+
+    point(x, height/2 + y);
+  }
+
+  // MOTION 101 aplicado al ángulo
+  let acceleration = map(mouseX,0,width,-0.005,0.005);
+
+  angleVelocity += acceleration;
+
+  angle += angleVelocity;
+
+  noiseOffset += 0.01;
+
+}
+```
+
+
+OTROS PROYECTOS
+
 https://editor.p5js.org/jferosorio/sketches/cBQxiNxnE
 <img width="586" height="385" alt="image" src="https://github.com/user-attachments/assets/1dbf3452-b58c-4f25-baa1-6564676186ed" />
 
@@ -236,6 +291,7 @@ https://editor.p5js.org/jferosorio/sketches/fhoVUg1Hn
 
 
 ## Bitácora de reflexión
+
 
 
 
