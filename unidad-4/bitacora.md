@@ -296,7 +296,9 @@ https://editor.p5js.org/jferosorio/sketches/fhoVUg1Hn
 ## Bitácora de reflexión
 
 
+1. Link a la pizarra de escalidraw; https://excalidraw.com/#json=bFaM9H4cjkfpBpZusItdt,Z7-9tpD48JD5zbJTghECnQ
 
+2. Cómo lo podrías aplicar a tu perfil profesional. ¿En dónde ves oportunidades?
 
 
 
