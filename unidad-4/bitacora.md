@@ -81,7 +81,91 @@ heading() extrae la dirección. Ese vector tiene un ángulo y finalmente el obje
 
 
 
-## 👌**Actividad 3**
+## 👌**Actividad 3**  
+
+**Crea una simulación de un vehículo que puedas conducir por la pantalla utilizando las teclas de flecha: la flecha izquierda acelera el vehículo hacia la izquierda, y la flecha derecha acelera hacia la derecha. El vehículo tendrá forma triangular y debe apuntar en la dirección en la que se está moviendo actualmente**
+
+
+
+Link al proyecto https://editor.p5js.org/jferosorio/sketches/wmkgGy9Wc
+```
+let vehicle;
+
+function setup() {
+  createCanvas(500, 400);
+  vehicle = new Vehicle(width/2, height/2);
+}
+
+function draw() {
+  background(240);
+
+  vehicle.update();
+  vehicle.edges();
+  vehicle.show();
+}
+
+class Vehicle {
+
+  constructor(x,y){
+    this.position = createVector(x,y);
+    this.velocity = createVector(0,0);
+    this.acceleration = createVector(0,0);
+
+    this.maxSpeed = 5;
+  }
+
+  applyForce(force){
+    this.acceleration.add(force);
+  }
+
+  update(){
+
+    // control con flechas
+    if (keyIsDown(LEFT_ARROW)){
+      this.applyForce(createVector(-0.1,0));
+    }
+
+    if (keyIsDown(RIGHT_ARROW)){
+      this.applyForce(createVector(0.1,0));
+    }
+
+    // MOTION 101
+    this.velocity.add(this.acceleration);
+    this.velocity.limit(this.maxSpeed);
+    this.position.add(this.velocity);
+
+    this.acceleration.mult(0);
+  }
+
+  edges(){
+    if (this.position.x > width) this.position.x = 0;
+    if (this.position.x < 0) this.position.x = width;
+  }
+
+  show(){
+
+    // ángulo según dirección de movimiento
+    let angle = this.velocity.heading();
+
+    push();
+    translate(this.position.x, this.position.y);
+    rotate(angle);
+
+    fill(0,150,255);
+    stroke(0);
+
+    //vehículo
+    triangle(-15,-10,-15,10,20,0);
+
+    pop();
+  }
+
+}
+```
+  
+
+
+
 ## 👌**Actividad 4**
 
 
@@ -114,6 +198,7 @@ https://editor.p5js.org/jferosorio/sketches/fhoVUg1Hn
 
 
 ## Bitácora de reflexión
+
 
 
 
