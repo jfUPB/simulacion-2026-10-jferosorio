@@ -298,7 +298,15 @@ https://editor.p5js.org/jferosorio/sketches/fhoVUg1Hn
 
 1. Link a la pizarra de escalidraw; https://excalidraw.com/#json=bFaM9H4cjkfpBpZusItdt,Z7-9tpD48JD5zbJTghECnQ
 
-2. Cómo lo podrías aplicar a tu perfil profesional. ¿En dónde ves oportunidades?
+2. Cómo lo podrías aplicar a tu perfil profesional. ¿En dónde ves oportunidades? - En mi proyecto como artista es importante observar las posibilidades que ofrecen los sistemas generativos, existen muchas vías.
+
+Por ejemplo, la creación de experiencias interactivas que parten de la actividad del usuario, pero se traspasan a un comportamiento que se espera, aunque tiene naturalidad en su comportamiento, ofrece sensaciones y sentimientos. Interactuar teniendo un feedback coherente genera placer y satisfacción. Conocer conceptos de distribución estándar, ruido Perlin, random, nos permite esto: obtener comportamientos naturales. Por supuesto, entender cómo aplicar estas fuerzas es indispensable, por lo que el repaso del análisis vectorial de cómo se plasman estas dentro de nuestro proyecto es fundamental.
+
+Por otro lado, el uso de sistemas de generación aplicando estos conceptos, como aleatoriedad, comportamiento oscilatorio, etc., nos ofrece una amplia gama de conocimientos para crear efectos de partículas. Explosiones, humo, efectos de agua o magia pueden ser replicados de manera precisa y optimizada con la aplicación de estas herramientas.
+
+Me imagino un sinfín de posibilidades: orbes que dejan estelas de fuego, hoyos negros, el vuelo de un unicornio dejando tras de sí un arcoíris. En fin, el repertorio narrativo que puede desprenderse a la imaginación y el manejo de estos conceptos se vuelve eterno.
+
+En conclusión, a mi criterio los conocimientos que se han abordado hasta el momento nos permiten crear un puente de coherencia entre la fantasía, lo real y mi objetivo narrativo.
 
 
 
