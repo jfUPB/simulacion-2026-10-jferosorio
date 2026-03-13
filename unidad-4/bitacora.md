@@ -192,11 +192,30 @@ this.acceleration.mult(0);
 ## 👌**Actividad 5 oordenadas polares**
 
 
+let v = p5.Vector.fromAngle(theta, r); Este método convierte automáticamente coordenadas polares (r, theta) a cartesianas (x, y) usando las fórmulas trigonométricas clásicas
 
+
+
+El tamaño del círculo es fija y  La posición sigue cambiando según v.x y v.y  ademas Se rompe la relación entre distancia y tamaño
+
+
+
+al eliminar r = height * 0.5*sin(theta);
+
+El círculo se mueve en un círculo perfecto de radio 120 píxeles y La línea siempre tiene la misma longitud
 
 ## 👌**Actividad 6; Funciones sinusoides**
+
+La función sinusoide es una curva matemática que describe una oscilación repetitiva, fundamental para entender fenómenos como el sonido, la electricidad o el movimiento de un péndulo. 
+Su comportamiento está definido por cinco pilares: **la amplitu**d, que determina el valor máximo de la onda; **el periodo**, que es el tiempo que tarda en completar un ciclo complet y la **frecuenci**a, que indica cuántos de esos ciclos ocurren en un segundo. Estos dos últimos están intrínsecamente ligados a la velocidad angular, la cual expresa la rapidez del cambio de fase en términos de radianes por segundo **la fase** señala el punto exacto del ciclo en el que se encuentra la onda en el instante inicial, permitiendo desplazar la gráfica hacia la izquierda o la derecha en el eje del tiempo
+
 ## 👌**Actividad 7 ; Repaso conceptos**
+
+Link al proyecto  incluyendo un concepto de la unidad 1 (aleatoriedad, distinta a random) y la unidad 3 (fuerzas). https://editor.p5js.org/jferosorio/sketches/LYX-aHAqc
+
 ## 👌**Actividad 8; Ondas**
+
+Link al proyecto dond ela curva de ciruclos se mueve en forma de ola; https://editor.p5js.org/jferosorio/sketches/TXqHMHsS7
 
 ## 👌**Actividad 8; Resortes**
 
@@ -217,6 +236,7 @@ https://editor.p5js.org/jferosorio/sketches/fhoVUg1Hn
 
 
 ## Bitácora de reflexión
+
 
 
 
