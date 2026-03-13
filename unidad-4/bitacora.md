@@ -281,6 +281,9 @@ function draw() {
 ```
 
 
+
+
+
 OTROS PROYECTOS
 
 https://editor.p5js.org/jferosorio/sketches/cBQxiNxnE
@@ -291,6 +294,7 @@ https://editor.p5js.org/jferosorio/sketches/fhoVUg1Hn
 
 
 ## Bitácora de reflexión
+
 
 
 
