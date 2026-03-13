@@ -168,6 +168,25 @@ class Vehicle {
 
 ## 👌**Actividad 4**
 
+1.Cuando se quieren aplicar varias fuerzas en un mismo frame (por ejemplo gravedad, viento, fricción o atracción), es necesario reiniciar la aceleración después de actualizar el movimiento.
+
+Por eso se agrega la línea:this.acceleration.mult(0);
+
+Quedando asi
+```
+// MOTION 101
+this.velocity.add(this.acceleration);
+this.position.add(this.velocity);
+
+// reiniciar aceleración
+this.acceleration.mult(0);
+```
+
+2. Link con atractor cambiado de color https://editor.p5js.org/jferosorio/sketches/2qaDbK0xk 
+
+3. 
+
+
 
 
 ## 👌**Actividad 5 oordenadas polares**
@@ -198,6 +217,7 @@ https://editor.p5js.org/jferosorio/sketches/fhoVUg1Hn
 
 
 ## Bitácora de reflexión
+
 
 
 
