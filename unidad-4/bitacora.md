@@ -83,6 +83,9 @@ heading() extrae la dirección. Ese vector tiene un ángulo y finalmente el obje
 
 ## 👌**Actividad 3**
 ## 👌**Actividad 4**
+
+
+
 ## 👌**Actividad 5 oordenadas polares**
 
 
@@ -111,5 +114,6 @@ https://editor.p5js.org/jferosorio/sketches/fhoVUg1Hn
 
 
 ## Bitácora de reflexión
+
 
 
