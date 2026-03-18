@@ -1,3 +1,6 @@
+
+<img width="986" height="237" alt="image" src="https://github.com/user-attachments/assets/2234e071-34be-4b7c-a6b6-c7a2d20bad25" />
+
 # Unidad 5
 ## Bitácora de proceso de aprendizaje
 
@@ -90,7 +93,7 @@ fill(127, this.lifespan)
 ```
 3. Si quisieras cambiar la representación visual (por ejemplo, usar líneas en vez de círculos), ¿Qué cambiarías y qué NO cambiarías?
 
-Para lograr que las particulas cambien de circulos a lineas, solo bastaria con editar el show()
+Para lograr que las particulas cambien de circulos a lineas, solo bastaria con editar el show() de la siguiente manera:
 ```
 show() {
   stroke(0, this.lifespan);
@@ -109,8 +112,6 @@ show() {
 ### 👌 Actividad 2 Del array al sistema: la abstracción del emisor
 
 
-### 👌 Actividad 3
-### 👌 Actividad 4
 
 
 ### Actividad 4; Fuerzas y particulas
