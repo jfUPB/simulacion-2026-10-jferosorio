@@ -30,6 +30,8 @@ class Particle {
     this.lifespan = 2550.0; // Aqui creamos el tiempo de vida de la particula
  ```
 
+Esta capa de comportamiento se puede llevar a GPU a tra vez de **compute shaders**  Esto para manejar un garn volumen de particulas
+
 
 
 
@@ -70,6 +72,7 @@ Si no matamos las particulas naturalmente seguiran cosumiendo recursos aunque sa
 
 
 **Capa de visualización:**
+Se puede llevar a GPU con **Vertex y fragmente shaders** Esto para manejar un garn volumen de particulas
 
 1. ¿Qué elementos visuales usa para representar una partícula?
 La partícula se dibuja en el método show() usando:
@@ -111,10 +114,48 @@ show() {
 
 ### 👌 Actividad 2 Del array al sistema: la abstracción del emisor
 
+### 👌 Actividad 03: Heterogeneidad: herencia y polimorfismo
+
+Link de proyecto con mis  notas; https://editor.p5js.org/jferosorio/sketches/HrYAmOiF5
+<img width="1662" height="505" alt="image" src="https://github.com/user-attachments/assets/462ec153-4abb-4c89-9f40-28e5d9c2d747" />
+
+
+
+📤 Bitácora
+
+¿Qué tienen en común las subclases de partículas? ¿Qué tienen de diferente?
+
+¿Por qué es importante que el Emitter no necesite saber qué tipo específico de partícula está gestionando? Explica esto con tus propias palabras.
+Por que esto engloba la revision de todo aquello que se queba en el concepto de Particula, no cuestiona; Es una particula circular?, Es una particula cuadrada?, NO. Solo se limita a trabajar sober lo que le compete, en ete caso que se trate de un Particle
+
+Si mañana quisieras agregar un tercer tipo de partícula, ¿Qué tendrías que crear y qué NO tendrías que modificar?
+Esto depende del flujo y la inclinacion que se tenga a la hora de editar el codigo, si quieres optimizar el trabajo colaborativo habra unas formas, si quieres optimizar la gestion de recurso habra otra, en este caso optaremos por dar una respuesta mas cercana a lo segundo, ya que estamos trabajando en un flujo de trabajo individual. 
+
+```
+<img width="789" height="189" alt="image" src="https://github.com/user-attachments/assets/36c18bf2-c05a-4824-948a-785d37d82b13" />
+
+Lo que yo haria seria simplemente agregar en esta zona del codigo addParticle(), linea y determinandole una probabilidad
+
+```
+
+
+Compara con Example 4.2: ¿Cambió la lógica del Emitter? ¿Cambió la lógica de muerte? ¿Qué capa del sistema se modificó y cuáles permanecieron intactas?
+
+Evidentemente vemos cambios estructurales en los emiters, es interesante ver que casualmente nos encontramos en la **Capa de estructura** 
+
+
+<img width="841" height="671" alt="image" src="https://github.com/user-attachments/assets/34c1d6dd-287d-4cca-af94-b9c04ac61119" />
 
 
 
 ### Actividad 4; Fuerzas y particulas
+https://editor.p5js.org/jferosorio/sketches/2qmO_0mki
+
+Antes teniasmos que la fuerzas estaban directamente en el comportamiento de las particulas.
+
+Ahora tenemos una actualizacion de MOtion 101, 
+
+
 
 
 ### La industria...
