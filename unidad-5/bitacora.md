@@ -1,6 +1,9 @@
 
 <img width="986" height="237" alt="image" src="https://github.com/user-attachments/assets/2234e071-34be-4b7c-a6b6-c7a2d20bad25" />
 
+https://natureofcode.com/particles/
+
+
 # Unidad 5
 ## Bitácora de proceso de aprendizaje
 
@@ -191,12 +194,185 @@ La coherencia entre el concepto de ciclo de vida y las decisiones de diseño.
 Que puedas explicar cómo cada elemento del sistema contribuye a comunicar la idea.
 Que la pieza transmita algo reconocible al verla e interactuar con ella.
 ```
+## EL VIAJE DE DANTE
 
-Inspirado en el viaje de Dante a travez de la divina comedia me gustaria plasmar "ciclo de vida" en el proceso de redencion del paso de la humanidad a la eternidad, asi como el paso por los circulos del infieno, el trayecto del purgatorio y la llegada al paraiso. Mi particula principal realizar este viaje mencionado, iniciando en forma de estrella y manchada y con una estela a fin de simular , a medida que avanza por la experiencia esta se ira trasformando hasta convertirse en una esfera de color claro. L
+<img width="922" height="748" alt="image" src="https://github.com/user-attachments/assets/0a065d34-1ba4-42b6-beb3-d0ffe8515f33" />
+
+~~Inspirado en el viaje de Dante a travez de la divina comedia me gustaria plasmar "ciclo de vida" en el proceso de redencion del paso de la humanidad a la eternidad, el paso por los circulos del infieno, el trayecto del purgatorio y la llegada al paraiso. Mi particula principal realizar este viaje mencionado, iniciando en forma de estrella y manchada y con una estela a fin de simular la maldad humana y los pecados, a medida que avanza por la experiencia esta se ira trasformando hasta convertirse en una esfera de color claro. La interaccion que veo posible es que le usuario al dar click cree una nueva particula simulando una nueva vida que pasa al nuevo plano existencial~~
 
 
-Otra idea
-Ciclo del agua. Inicia con una gota que sale de la parte superior del canvas que simula el cielo, cae y pasa por el ciclo del agua y termina subiendo a la parte superior del canvas y muere.
+...Otra idea...
+## CICLO DEL AGUA
+
+<img width="1232" height="655" alt="image" src="https://github.com/user-attachments/assets/01bd11f0-e84f-428e-a16c-f1edbf217ebf" />
+
+
+
+
+El sistema representará el ciclo del agua a través de una simulación interactiva en la que el usuario tendrá un papel activo dentro del entorno. Al mantener presionado el mouse, se generará lluvia mediante un emisor de partículas que dará origen a gotas de agua, las cuales serán afectadas por la gravedad y descenderán sobre una montaña. Al entrar en contacto con la superficie, se deslizarán de forma natural según la pendiente del terreno, simulando el comportamiento del agua en los ríos. Una vez lleguen a la base, donde se encontrará el río, las partículas cambiarán de estado y pasarán a representar vapor de agua, el cual ascenderá mientras se desvanece, comunicando visualmente el proceso de evaporación. Este cambio permitirá evidenciar el ciclo de vida de las partículas, evitando que desaparezcan de manera abrupta y reforzando la narrativa del fenómeno natural. Adicionalmente, la simulación incorpora un ciclo de día y noche que aportará dinamismo al entorno, enriqueciendo la experiencia visual.
+
+```
+let particulas = [];
+let tiempo = 0;
+let emitter;
+
+function setup() {
+  createCanvas(800, 600);
+  emitter = new Emitter();
+}
+
+function draw() {
+  tiempo += 0.005;
+
+  // Crearemos ciclo de dia y noche
+  let dia = map(sin(tiempo), -1, 1, 0, 1);
+  let cielo = lerpColor(color(10, 10, 40), color(135, 206, 235), dia);
+  background(cielo);
+
+  dibujarEscenario();
+
+  // Emision continua de particulas
+  if (mouseIsPressed) {
+    emitter.emit(mouseX, mouseY);
+  }
+
+  // Actualizar particulas y muerte
+  for (let i = particulas.length - 1; i >= 0; i--) {
+    let p = particulas[i];
+    p.update();
+    p.show();
+
+    if (p.muerta()) {
+      particulas.splice(i, 1);
+    }
+  }
+}
+
+
+
+//Escenario
+function dibujarEscenario() {
+  // montaña
+  fill(80, 180, 80);
+  triangle(0, height,0, height / 2, width, height);
+
+  // río
+  fill(40, 90, 200);
+  rect(0, height - 50, width, 50);
+}
+
+
+
+
+// altura de la montaña (colisión)
+function alturaMontana(x) {
+  let centro = 0;
+  let altura = height / 2;
+
+  let dist = abs(x - centro);
+  let maxDist = width / 2;
+
+  return map(dist, 0, maxDist, altura, height);
+}
+
+
+
+// Emisor de gotas de lluvia
+class Emitter {
+  emit(x, y) {
+    for (let i = 0; i < 5; i++) {
+      particulas.push(new Gota(x + random(-90, 90), y));
+    }
+  }
+}
+
+
+
+
+//  GOTAS / VAPOR
+
+class Gota {
+  constructor(x, y) {
+    this.pos = createVector(x, y);
+    this.vel = createVector(random(-0.5, 0.5), random(0, 1)); //Vector aleatorio para comportamiento mas natural
+    this.acc = createVector(0, 0);
+
+    this.tamano = random(4,9); // Crearemos gotas de difrente tamano para dar naturalidad
+    this.estado = "lluvia";
+
+    this.ruidoOffset = random(1000);
+  }
+
+  aplicarFuerza(f) {
+    this.acc.add(f);
+  }
+
+  update() {
+    if (this.estado === "lluvia") {
+      let gravedad = createVector(0, 0.2);
+      this.aplicarFuerza(gravedad);
+
+      // colision
+      let suelo = alturaMontana(this.pos.x);
+
+      if (this.pos.y >= suelo) {
+        this.pos.y = suelo;
+
+        // deslizamiento tipo río
+        this.vel.y = 0.5;       // evita rebotes raros
+        this.vel.x += 0.1;      // flujo lateral
+      }
+
+      // cuando llega al rio pasamos a estado de evaporacion
+      if (this.pos.y > height - 60) {
+        this.estado = "evaporacion";
+        this.vel = createVector(0, random(-1.5, -2.5));
+      }
+    }
+
+    
+    
+    
+    //EVAPORACIÓN
+    
+    if (this.estado === "evaporacion") {
+      let subida = createVector(0, -0.03);
+      this.aplicarFuerza(subida);
+
+      let vientoX = map(noise(this.ruidoOffset), 0, 1, -0.5, 0.5);
+      this.ruidoOffset += 0.01;
+
+      this.aplicarFuerza(createVector(vientoX, 0));
+    }
+
+    //  MOTION101
+    this.vel.add(this.acc);
+    this.pos.add(this.vel);
+    this.acc.mult(0);
+  }
+
+  show() {
+    noStroke();
+
+    if (this.estado === "lluvia") {
+      fill(0, 0, 255, 180);
+      ellipse(this.pos.x, this.pos.y, this.tamano, this.tamano * 1.5);
+    } else {
+      fill(220, 220, 255, 120);
+      ellipse(this.pos.x, this.pos.y, this.tamano * 1.5);
+    }
+  }
+
+  muerta() {
+    return this.pos.y < 0;
+  }
+}
+```
+<img width="793" height="436" alt="image" src="https://github.com/user-attachments/assets/07ca9eb1-340b-46a4-9a37-c794925b02b9" />
+<img width="788" height="509" alt="image" src="https://github.com/user-attachments/assets/eff97370-9cca-4980-879e-1da5c040a90b" />
+<img width="796" height="497" alt="image" src="https://github.com/user-attachments/assets/79014b58-6a89-4fc5-8dc2-8244afed7bb7" />
+
+
 
 Para tener en cuenta
 Podemos generar el comportamiento en el show(), de tal manera que cierto rango del tiempoi de vida de la partidcula tenga ciertas caracteristicas, que de 255 a 150 tal cosa, de 150 a 100 de trasforma y de 100 a 0 muere y pasa tal cosa
@@ -208,5 +384,6 @@ en for() realiza el repaso de las posiciones d elas particulas al reves por el -
 
 <img width="803" height="301" alt="image" src="https://github.com/user-attachments/assets/30b3c3f6-7c7d-45fd-87c7-b87d13594729" />
 
+![Uploading image.png…]()
 
 ## Bitácora de reflexión
