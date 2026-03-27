@@ -372,6 +372,25 @@ class Gota {
 <img width="788" height="509" alt="image" src="https://github.com/user-attachments/assets/eff97370-9cca-4980-879e-1da5c040a90b" />
 <img width="796" height="497" alt="image" src="https://github.com/user-attachments/assets/79014b58-6a89-4fc5-8dc2-8244afed7bb7" />
 
+
+<br><br><br>
+
+### Para resolver los requisitos concpetuales
+ 
+1. Dos tipos de partículas diferentes (herencia y polimorfismo)
+Se manejan partículas en dos estados: lluvia y evaporación. Aunque pertenecen a la misma estructura base, su comportamiento cambia según el estado (caer o subir), lo que evidencia el uso de polimorfismo al ejecutar métodos como update() y show() de manera diferente.
+
+2. Ciclo de vida visible
+Las partículas no desaparecen de forma inmediata. Primero caen como gotas, luego al llegar al río se transforman en vapor y finalmente ascienden mientras se desvanecen, mostrando claramente el proceso de evaporación antes de “morir”.
+
+3. Fuerzas que afectan las partículas
+Se aplican varias fuerzas: la gravedad en la caída, la pendiente de la montaña que dirige el flujo del agua hacia los lados, y una fuerza ascendente con variación lateral (ruido de Perlin) que simula el viento durante la evaporación.
+
+4. Interacción del usuario con propósito narrativo
+El usuario, al mantener presionado el mouse, genera la lluvia. Esta acción activa todo el ciclo del agua, dándole sentido narrativo a la interacción dentro de la simulación.
+
+5. Gestión correcta de memoria
+Las partículas se eliminan cuando terminan su ciclo de vida (cuando salen del canvas). Esto se hace recorriendo el arreglo en reversa y usando splice, evitando acumulación innecesaria y manteniendo el rendimiento del programa.
 ---
 <br><br><br>
 
