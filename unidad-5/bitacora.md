@@ -194,7 +194,7 @@ La coherencia entre el concepto de ciclo de vida y las decisiones de diseño.
 Que puedas explicar cómo cada elemento del sistema contribuye a comunicar la idea.
 Que la pieza transmita algo reconocible al verla e interactuar con ella.
 ```
-## EL VIAJE DE DANTE
+## ~~EL VIAJE DE DANTE~~
 
 <img width="922" height="748" alt="image" src="https://github.com/user-attachments/assets/0a065d34-1ba4-42b6-beb3-d0ffe8515f33" />
 
@@ -372,7 +372,8 @@ class Gota {
 <img width="788" height="509" alt="image" src="https://github.com/user-attachments/assets/eff97370-9cca-4980-879e-1da5c040a90b" />
 <img width="796" height="497" alt="image" src="https://github.com/user-attachments/assets/79014b58-6a89-4fc5-8dc2-8244afed7bb7" />
 
-
+---
+<br><br><br>
 
 Para tener en cuenta
 Podemos generar el comportamiento en el show(), de tal manera que cierto rango del tiempoi de vida de la partidcula tenga ciertas caracteristicas, que de 255 a 150 tal cosa, de 150 a 100 de trasforma y de 100 a 0 muere y pasa tal cosa
