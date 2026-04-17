@@ -459,7 +459,7 @@ Porque transmite celebración colectiva, expansión, sincronía y explosión de 
 ## Bitácora de aplicación 
 
 # Concepto visual
-Me encanda el mar y su comportamiento, busque materializar esta naturaleza en mi obre prodcurando que la pieza traduce la fluidez y el ciclo del ecosistema marino en un sistema de flocking y campos de corriente (flow fields). No se trata solo de mover peces, sino de evocar la calma del mar, la energía del verano, la quietud del invierno y la fragilidad del deshielo. Los bancos de peces representan la vida que se adapta a las condiciones del océano, y el color cambiante simboliza la vitalidad y la conexión con la música.
+Me encanda el mar y su comportamiento, busque materializar esta naturaleza en mi obre prodcurando que la pieza traduce la fluidez y el ciclo del ecosistema marino en un sistema de flocking y campos de corriente (flow fields). No se trata solo de mover peces, sino de evocar la calma del mar, la energía del verano, la quietud del invierno y la fragilidad del deshielo. Los bancos de peces representan la vida que se adapta a las condiciones del océano, y el color cambiante simboliza la vitalidad y la conexión con la música. Se busca tambien incorporar siempre un elemento educativo, algun tema a explicar o presentar, el experimento sirve como un recurso visual para esto, en este caso explicar el comportamiento animal marino.
 
 <br>
 
