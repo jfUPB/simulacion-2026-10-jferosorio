@@ -60,7 +60,9 @@ GRAVEDAD https://editor.p5js.org/jferosorio/sketches/n12Mt1y0D
 
 ## Bitácora de aplicación 
 
-Nota: no hay trabajo reportado en la bitácora de aplicaciòn
+
+
+
 
 
 ## Bitácora de reflexión
